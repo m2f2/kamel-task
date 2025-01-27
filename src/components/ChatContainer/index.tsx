@@ -28,7 +28,6 @@ export function ChatContainer() {
   return (
     <div
       className={`flex flex-col bg-white ${isFullscreen?" py-6":""}`}
-      dir="rtl"
       style={{ height: "calc(100vh - 6rem)" }}
       ref={containerRef}
     >
@@ -45,7 +44,7 @@ export function ChatContainer() {
       </div>
 
       {/* Reply Section */}
-      <div className=" ">
+      <div className="">
         <ReplySection />
       </div>
     </div>
