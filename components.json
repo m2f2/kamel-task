@@ -11,7 +11,7 @@
   "rsc": false,
   "style": "new-york",
   "tailwind": {
-    "baseColor": "zinc",
+    "baseColor": "neutral",
     "config": "tailwind.config.js",
     "css": "src/index.css",
     "cssVariables": true,
@@ -21,9 +21,6 @@
   "registries": {
     "plate": {
       "style": "default",
-      "tailwind": {
-        "baseColor": "neutral"
-      },
       "aliases": {
         "ui": "@/components/plate-ui"
       },

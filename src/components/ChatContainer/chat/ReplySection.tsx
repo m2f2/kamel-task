@@ -1,4 +1,5 @@
-import { PlateEditor } from "@/components/PlateEditor";
+import { PlateEditor } from "@/components/editor/plate-editor";
+
 export const ReplySection = () => {
   return (
     <section className=" pt-6 bg-white  mx-10 ">
@@ -9,7 +10,8 @@ export const ReplySection = () => {
       </div>
 
       <div className="border rounded-xl">
-        <PlateEditor />
+        {/* <PlateEditor /> */}
+        <PlateEditor/>
       </div>
     </section>
   );

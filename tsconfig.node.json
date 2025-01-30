@@ -18,13 +18,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    /* Paths */
-    "baseUrl": ".", // Base directory for resolving non-relative module names
-    "paths": {
-      "@/*": ["./src/*"] // Map @/* to ./src/*
-    }
+    "noUncheckedSideEffectImports": true
   },
   "include": ["vite.config.ts"]
 }

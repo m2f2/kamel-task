@@ -21,11 +21,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    /* Paths */
-    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"] // Map @/* to ./src/*
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
   "include": ["src"]
