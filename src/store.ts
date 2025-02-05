@@ -95,7 +95,7 @@ const initialMessages: Message[] = [
   ];
 
 
-const initialActiveOrders: number[] = [3, 6, 8, 12, 15];
+const initialActiveOrders: number[] = [3, 6, 8];
 
 export const messagesAtom = atom<Message[]>(initialMessages);
 export const activeOrdersAtom = atom<number[]>(initialActiveOrders);

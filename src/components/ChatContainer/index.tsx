@@ -28,8 +28,9 @@ export function ChatContainer() {
   return (
     <div
       className={`flex flex-col bg-white ${isFullscreen?" py-6":""}`}
-      style={{ height: "calc(100vh - 6rem)" }}
+      style={{ height: "calc(100vh - 6rem)", maxHeight: "100vh" }}
       ref={containerRef}
+      dir="rtl"
     >
       {/* Header Section */}
       <ChatHeader />

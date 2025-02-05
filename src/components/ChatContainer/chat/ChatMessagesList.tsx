@@ -6,7 +6,7 @@ export const ChatMessagesList = () => {
   const [messages] = useAtom(messagesAtom);
   
   return (
-    <div className="space-y-4 mb-6 max-h-[60vh] px-6 ">
+    <div className="space-y-4 mb-6 px-6 ">
       {messages.map((msg) => (
         <ChatMessage key={msg.id} {...msg} />
       ))}

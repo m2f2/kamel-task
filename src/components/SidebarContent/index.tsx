@@ -92,8 +92,8 @@ const selectSections: SelectSection[] = [
 export function SidebarContent() {
   return (
     <>
-      <Tabs defaultValue="details" className="w-full ">
-        <TabsList className="w-full grid grid-cols-2 h-12 pb-2 bg-white">
+      <Tabs defaultValue="details" className="w-full">
+        <TabsList className="w-full grid grid-cols-2 pb-2 bg-white shadow-md rounded-t-lg">
           <TabsTrigger
             value="activity"
             className="text-lg border-b-4 border-transparent data-[state=active]:border-b-green-500"
@@ -110,12 +110,15 @@ export function SidebarContent() {
 
         <TabsContent value="details">
           <Card className="border-0 shadow-none">
-            <CardContent className="space-y-6 p-4">
+            <CardContent className="space-y-4 p-4 max-h-[calc(100vh-100px)] overflow-y-auto my-4">
               {selectSections.map((section) => (
                 <SelectField key={section.fieldName} section={section} />
               ))}
-            <hr/>
-              <Button variant="secondary" className="w-full mt-8 gap-4 rounded-xl ">
+              <hr />
+              <Button 
+                variant="secondary" 
+                className="w-full mt-4 gap-4 rounded-xl mb-5  sm:px-6 sm:py-2 sm:mt-6"
+              >
                 تعديل
                 <Pencil className="w-4 h-4" />
               </Button>
@@ -123,8 +126,8 @@ export function SidebarContent() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="activity" >
-          <Card className="border-0 shadow-none ">
+        <TabsContent value="activity">
+          <Card className="border-0 shadow-none">
             <CardContent className="p-4">activity</CardContent>
           </Card>
         </TabsContent>

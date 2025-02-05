@@ -21,7 +21,7 @@ export function PlateEditor() {
         <FixedToolbar className="p-2 flex" dir="rtl">
           <FixedToolbarButtons />
           <Button
-            className="h-9 rounded-xl gap-2 text-gray-500 bg-muted p-4"
+            className="rounded-xl gap-2 text-gray-500 bg-muted p-2"
             variant="outline"
           >
             <MediaToolbarButton nodeType={FilePlugin.key} />
@@ -30,7 +30,7 @@ export function PlateEditor() {
         </FixedToolbar>
         <Editor
           placeholder="إضافة نص...."
-          className="px-6 py-4 h-28 border-0 outline-none overflow-y-auto "
+          className="px-6 py-4  border-0 outline-none overflow-y-auto "
           autoFocus
         />
         <FixedToolbar className="p-2 flex justify-between flex-row-reverse">
