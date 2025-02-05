@@ -3,14 +3,10 @@ import {
   ItalicPlugin,
   UnderlinePlugin,
 } from '@udecode/plate-basic-marks/react';
-import { FilePlugin } from '@udecode/plate-media/react';
 import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
 
-import { AlignDropdownMenu } from './align-dropdown-menu';
 import { IndentToolbarButton } from './indent-toolbar-button';
-import { LinkToolbarButton } from './link-toolbar-button';
 import { MarkToolbarButton } from './mark-toolbar-button';
-import { MediaToolbarButton } from './media-toolbar-button';
 import { ToolbarGroup } from './toolbar';
 import { Icons } from '../icons';
 import AlignmentButton from '../editor/AlignToolbarButton';

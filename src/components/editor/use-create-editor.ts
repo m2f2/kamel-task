@@ -53,7 +53,7 @@ export const useCreateEditor = () => {
       BasicElementsPlugin,
       BasicMarksPlugin,
       EmojiPlugin.configure({
-        options: { data: emojiMartData },
+        options: { data: emojiMartData as any },
       }),
       AlignPlugin.configure({
         inject: {
